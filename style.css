@@ -32,5 +32,13 @@ main form {
 
 main {
   display: flex;
+  justify-content: space-between;
 }
 
+#evaluation-form {
+  flex-direction: column;
+}
+
+#trybewarts-forms-logo {
+  height: 500px;
+}
