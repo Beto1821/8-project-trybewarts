@@ -25,3 +25,12 @@
   justify-content: center;
 }
 
+main form {
+  display: flex;
+  width: 675px;
+}
+
+main {
+  display: flex;
+}
+
