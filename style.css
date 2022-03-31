@@ -34,6 +34,8 @@ main {
   display: flex;
   justify-content: space-between;
   margin: 10px;
+  width: 100%;
+  border: 2px solid red;
 }
 
 #evaluation-form {
@@ -42,6 +44,7 @@ main {
 
 #trybewarts-forms-logo {
   height: 500px;
+  display: flex;
 }
 
 .nomeCompleto , .emailCasa {
@@ -53,3 +56,14 @@ main {
   display: flex;
   flex-direction: column;
 }
+
+#label-content {
+  display: flex;
+  width: fit-content;
+}
+
+/* #escolha {
+  display: flex;
+  align-content: space-between;
+  border: 2px solid red;
+} */
