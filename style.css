@@ -35,7 +35,6 @@ main {
   justify-content: space-between;
   margin: 10px;
   width: 100%;
-  border: 2px solid red;
 }
 
 #evaluation-form {
@@ -60,10 +59,16 @@ main {
 #label-content {
   display: flex;
   width: fit-content;
+  padding: 10px;
 }
 
-/* #escolha {
+#avalia {
   display: flex;
-  align-content: space-between;
-  border: 2px solid red;
-} */
+  padding: 10px;
+  align-items: center;
+}
+
+#avalia #escolha {
+  margin-left: 5px;
+}
+
