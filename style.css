@@ -33,6 +33,7 @@ main form {
 main {
   display: flex;
   justify-content: space-between;
+  margin: 10px;
 }
 
 #evaluation-form {
@@ -41,4 +42,9 @@ main {
 
 #trybewarts-forms-logo {
   height: 500px;
+}
+
+.nomeCompleto , .emailCasa {
+  display: flex;
+  padding: 5px;
 }
