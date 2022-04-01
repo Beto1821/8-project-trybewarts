@@ -16,7 +16,6 @@ function valida() {
 
 btn.addEventListener('click', valida);
 
-
 check.addEventListener('change', () => {
   if (check.checked) {
     botao.disabled = false;

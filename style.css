@@ -23,6 +23,9 @@
 #trybewarts-header-title {
   display: flex;
   justify-content: center;
+  color: aliceblue;
+  font-size: 40px;
+  align-self: center;
 }
 
 main form {
@@ -52,15 +55,16 @@ main {
   padding: 5px;
 }
 
-#label-family {
+#label-family-section {
   display: flex;
   flex-direction: column;
 }
 
-#label-content {
+#label-content-section {
   display: flex;
   width: fit-content;
   padding: 10px;
+  flex-direction: column;
 }
 
 #avalia {
@@ -86,5 +90,5 @@ main {
 }
 
 #textarea {
-  height: 200px;
+  height: 100px;
 }
