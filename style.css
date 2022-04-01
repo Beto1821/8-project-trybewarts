@@ -48,12 +48,12 @@ main {
 #trybewarts-forms-logo {
   height: 500px;
   display: flex;
+  padding: 40px 40px;
 }
 
-.nomeCompleto , .emailCasa {
+.nome-completo , .emailCasa {
   display: flex;
   padding: 10px;
-  justify-content: space-between;
 }
 
 #label-family-section {
@@ -85,6 +85,8 @@ main {
 
 #submit-btn {
   margin-top: 5px;
+  display: flex;
+  padding: 10px 46%;
 }
 
 #counter {

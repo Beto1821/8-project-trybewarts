@@ -29,22 +29,24 @@
     </header>
     <main>
       <form action="" id="evaluation-form">
-        <div class="nomeCompleto">
-          <input type="text" id="input-name" placeholder="Nome" />
-          <input type="text" id="input-lastname" placeholder="Sobrenome" />
-        </div>
-        <div class="emailCasa">
-          <input type="text" id="input-email" placeholder="Email" />
-          <label for="">
-            Casa:
-            <select name="" id="house">
-              <option value="Gitnória" id="gitnoria-house">Gitnória</option>
-              <option value="Reactpuff" id="reactpuff-house">Reactpuff</option>
-              <option value="Corvinode" id="corvinode-house">Corvinode</option>
-              <option value="Pytherina" id="pytherina-house">Pytherina</option>
-            </select>
-          </label>
-        </div>
+        <section class="dados-privados">
+          <div class="nome-completo">
+            <input type="text" id="input-name" placeholder="Nome" />
+            <input type="text" id="input-lastname" placeholder="Sobrenome" />
+          </div>
+          <div class="emailCasa">
+            <input type="text" id="input-email" placeholder="Email" />
+            <label for="">
+              Casa:
+              <select name="" id="house">
+                <option value="Gitnória" id="gitnoria-house">Gitnória</option>
+                <option value="Reactpuff" id="reactpuff-house">Reactpuff</option>
+                <option value="Corvinode" id="corvinode-house">Corvinode</option>
+                <option value="Pytherina" id="pytherina-house">Pytherina</option>
+              </select>
+            </label>
+          </div>
+        </section>
         <section id="label-family-section">
           <h2 id="label-family">Qual sua família?</h2>
           <label for=""
@@ -120,12 +122,12 @@
           <textarea id="textarea" maxlength="500"></textarea>
           <div id="counter">500</div>
         </section>
-
-        <label id="label-infos"
-          >Você concorda com o uso das informações acima?</label
-        >
-        <input type="checkbox" id="agreement" />
-        <button type="submit" id="submit-btn" class="btn btn-primary btn-lg">Enviar</button>
+        <section class="enviar">
+          <label id="label-infos"
+            >Você concorda com o uso das informações acima?
+          <input type="checkbox" id="agreement" /></label>
+          <button type="submit" id="submit-btn" class="btn btn-primary">Enviar</button>
+        </section>
       </form>
       <img
         id="trybewarts-forms-logo"
