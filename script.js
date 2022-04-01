@@ -28,7 +28,7 @@ botao.disabled = true;
 function contador() {
   let count = 500;
   count -= textArea.value.length;
-  textoContador.innerText = `Faltam ${count} caracteres`;
+  textoContador.innerText = `${count}`;
 }
 
 textArea.addEventListener('input', contador);
