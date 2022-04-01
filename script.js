@@ -7,6 +7,7 @@ const botao = document.getElementById('submit-btn');
 const check = document.getElementById('agreement');
 const formulario = document.getElementById('evaluation-form');
 
+
 function valida() {
   if (email.value !== 'tryber@teste.com' && senha.value !== '123456') {
     alert('Email ou senha inválidos.');
@@ -85,17 +86,15 @@ function pObs() {
   return `Observações: ${obs}`;
 }
 
-
-
-function registro() {
-const materias = document.getElementById('label-content').value;
-const avaliacao = document.getElementById('avalia').value;
-
-function clean() {
-
+function enviar() {
+  const registro = [pNomeComp(), pEmail(), pCasa(), pFamilia(), pMaterias(), pNota(), pObs()];
+  formulario.innerHTML = '';
+  const item = formulario.firstChild;
+  for (let i = 0; i < registro.length; i += 1) {
+    const linha = document.createElement('div');
+    linha.innerText = registro[i];
+    item.appendChild(linha);
+  }
 }
-
-}
-
 
 botao.addEventListener('click', enviar);
