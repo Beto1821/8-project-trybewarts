@@ -48,7 +48,6 @@ main {
 #trybewarts-forms-logo {
   height: 500px;
   display: flex;
-  margin: 100px 200px;
 }
 
 .nome-completo , .emailCasa {
