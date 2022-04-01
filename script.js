@@ -26,7 +26,6 @@ check.addEventListener('change', () => {
   }
 });
 
-
 function contador() {
   let count = 500;
   count -= textArea.value.length;
