@@ -3,6 +3,8 @@ const email = document.getElementById('login');
 const senha = document.getElementById('password');
 const textArea = document.getElementById('textarea');
 const textoContador = document.getElementById('counter');
+const botao = document.getElementById('submit-btn');
+const check = document.getElementById('agreement');
 
 function valida() {
   if (email.value !== 'tryber@teste.com' && senha.value !== '123456') {
@@ -14,9 +16,6 @@ function valida() {
 
 btn.addEventListener('click', valida);
 
-const botao = document.getElementById('submit-btn');
-const check = document.getElementById('agreement');
-botao.disabled = true;
 
 check.addEventListener('change', () => {
   if (check.checked) {
@@ -26,6 +25,7 @@ check.addEventListener('change', () => {
   }
 });
 
+botao.disabled = true;
 function contador() {
   let count = 500;
   count -= textArea.value.length;
