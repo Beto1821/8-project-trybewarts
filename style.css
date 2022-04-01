@@ -74,7 +74,6 @@ main {
 }
 
 #pezinho {
-  display: flex;
-  align-items: flex-end;
+  text-align: center;
   text-align: center;
 }

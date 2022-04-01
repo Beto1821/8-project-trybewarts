@@ -12,18 +12,6 @@ function valida() {
 
 btn.addEventListener('click', valida);
 
-// const submitButton = document.getElementById('submit-btn');
-// const check = document.getElementById('agreement');
-// submitButton.disable = true;
-
-// check.addEventListener('click', () => {
-//   if (check.select === true) {
-//     submitButton.disable = false;
-//   } else {
-//     submitButton.disable = true;
-//   }
-// });
-
 const botao = document.getElementById('submit-btn');
 const check = document.getElementById('agreement');
 botao.disabled = true;
