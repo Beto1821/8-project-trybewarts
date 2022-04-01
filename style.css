@@ -84,3 +84,7 @@ main {
 #counter {
   margin-top: 5px;
 }
+
+#textarea {
+  height: 200px;
+}
