@@ -58,6 +58,7 @@ main {
 #label-family-section {
   display: flex;
   flex-direction: column;
+  padding: 10px;
 }
 
 #label-content-section {
