@@ -23,3 +23,14 @@ check.addEventListener('change', () => {
     botao.disabled = true;
   }
 });
+
+const textArea = document.getElementById('textarea');
+const textoContador = document.getElementById('counter');
+
+function contador() {
+  let count = 500;
+  count -= textArea.value.length;
+  textoContador.innerText = `Faltam ${count} caracteres`;
+}
+
+textArea.addEventListener('input', contador);

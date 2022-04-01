@@ -75,5 +75,12 @@ main {
 
 #pezinho {
   text-align: center;
-  text-align: center;
+}
+
+#submit-btn {
+  margin-top: 5px;
+}
+
+#counter {
+  margin-top: 5px;
 }
