@@ -1,6 +1,8 @@
 const btn = document.getElementById('entrar');
 const email = document.getElementById('login');
 const senha = document.getElementById('password');
+const textArea = document.getElementById('textarea');
+const textoContador = document.getElementById('counter');
 
 function valida() {
   if (email.value !== 'tryber@teste.com' && senha.value !== '123456') {
@@ -24,8 +26,6 @@ check.addEventListener('change', () => {
   }
 });
 
-const textArea = document.getElementById('textarea');
-const textoContador = document.getElementById('counter');
 
 function contador() {
   let count = 500;

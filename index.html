@@ -40,25 +40,9 @@
           </label>
         </div>
         <label id="label-family">Qual sua família?</label>
-        <spam>
-          <input type="radio" value="Frontend" name="family" id="a" />Frontend
-        </spam>
-        <spam
-          ><input
-            type="radio"
-            value="Backend"
-            name="family"
-            id="a"
-          />Backend</spam
-        >
-        <spam>
-          <input
-            type="radio"
-            value="FullStack"
-            name="family"
-            id="a"
-          />FullStack</spam
-        >
+          <label for=""><input type="radio" value="Frontend" name="family" id="a" />Frontend</label>
+          <label for=""><input type="radio" value="Backend" name="family" id="a" />Backend</label>
+          <label for=""><input type="radio" value="FullStack" name="family" id="a" />FullStack</label>
         <label for="" id="label-content"
           >Qual conteúdo você está com mais vontade de aprender?</label
         >
@@ -87,7 +71,10 @@
 
         <label class="textarea">Deixe seu comentário:</label>
         <textarea id="textarea" maxlength="500"></textarea>
-        <label id="label-infos">Você concorda com o uso das informações acima?</label> <input type="checkbox" id="agreement">
+        <label id="label-infos"
+          >Você concorda com o uso das informações acima?</label
+        >
+        <input type="checkbox" id="agreement" />
         <button type="submit" id="submit-btn">Enviar</button>
         <div id="counter">Faltam 500 caracteres</div>
       </form>
