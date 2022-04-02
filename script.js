@@ -34,59 +34,34 @@ function contador() {
 
 textArea.addEventListener('input', contador);
 
-function pNome() {
-  const name = document.querySelector('#input-name').value;
-  const lname = document.querySelector('#input-lastname').value;
-
-  return `Nome: ${name} ${lname}`;
-}
-
-function pEmail() {
-  return `email: ${document.getElementById('input-email').value}`;
-}
-
-function pCasa() {
-  return `Casa: ${document.getElementById('house').value}`;
-}
-
-function pFamilia() {
-  return `Familia: ${
-    document.querySelector('input[name="family"]:checked').value
-  }`;
-}
+const pname = document.querySelector('#input-name');
+const pSobreN = document.querySelector('#input-lastname');
+const pEmail = document.getElementById('input-email');
+const pCasa = document.getElementById('house');
 // https://pt.stackoverflow.com/questions/83463/pegar-valores-checkbox-com-javascript
 function pMaterias() {
-  const lMaterias = [];
+  let lMaterias = [];
   const materias = document.getElementsByName('materia');
-  for (let m = 0; m < materias.length; m += 1) {
-    if (materias[m].checked) {
-      lMaterias.push(materias[m].value);
+  for (let i = 0; i < materias.length; i += 1) {
+    if (materias[i].checked) {
+      lMaterias.push(materias[i].value);
     }
   }
-  return `Matérias: ${lMaterias}`;
+  lMaterias = lMaterias.join(', ');
+  return lMaterias;
 }
-
-function pNota() {
-  return `Avaliação: ${
-    document.querySelector('input[name="rate"]:checked').value
-  }`;
-}
-
-function pObs() {
-  return `Observações: ${document.getElementById('texarea').value}`;
-}
-
-function enviar(event) {
-const construcao = [
-  pNome(),
-  pEmail(),
-  pCasa(),
-  pFamilia(),
-  pMaterias(),
-  pNota(),
-  pObs(),
-];}
-//   formulario.innerHTML = '';
-// }
-
-botao.addEventListener('click', enviar);
+botao.addEventListener('click', (e) => {
+  const pObs = document.getElementById('textarea');
+  const pNota = document.querySelector('input[name="rate"]:checked');
+  const pFamilia = document.querySelector('input[name="family"]:checked');
+  e.preventDefault();
+  formulario.innerHTML = `
+  <p>Nome: ${pname.value} ${pSobreN.value}</p>
+  <p>Email: ${pEmail.value}</p>
+  <p>Casa: ${pCasa.value}</p>
+  <p>Família: ${pFamilia.value}</p>
+  <p>Matérias: ${pMaterias()}</p>
+  <p>Avaliação: ${pNota.value}</p>
+  <p>Observações: ${pObs.value}</p>
+  `;
+});
