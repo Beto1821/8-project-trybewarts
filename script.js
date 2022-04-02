@@ -7,7 +7,6 @@ const botao = document.getElementById('submit-btn');
 const check = document.getElementById('agreement');
 const formulario = document.getElementById('evaluation-form');
 
-
 function valida() {
   if (email.value !== 'tryber@teste.com' && senha.value !== '123456') {
     alert('Email ou senha inválidos.');
@@ -35,32 +34,25 @@ function contador() {
 
 textArea.addEventListener('input', contador);
 
-// requsisito 21
+function pNome() {
+  const name = document.querySelector('#input-name').value;
+  const lname = document.querySelector('#input-lastname').value;
 
-function pNomeComp() {
-  const nome = document.querySelector('#input-name').value;
-  const sobren = document.querySelector('#input-lastname').value;
-
-  return `Nome: ${nome} ${sobren}`;
+  return `Nome: ${name} ${lname}`;
 }
 
 function pEmail() {
-  const email = document.getElementById('input-email').value;
-
-  return `email: ${email}`;
-
+  return `email: ${document.getElementById('input-email').value}`;
 }
 
 function pCasa() {
-  const casa = document.getElementById('house').value;
-
-  return `Casa: ${casa}`;
+  return `Casa: ${document.getElementById('house').value}`;
 }
 
 function pFamilia() {
-  const familia = document.querySelector('input[name="family"]:checked').value;
-
-  return `Familia: ${familia}`;
+  return `Familia: ${
+    document.querySelector('input[name="family"]:checked').value
+  }`;
 }
 // https://pt.stackoverflow.com/questions/83463/pegar-valores-checkbox-com-javascript
 function pMaterias() {
@@ -75,26 +67,26 @@ function pMaterias() {
 }
 
 function pNota() {
-  const nota = document.querySelector('input[name="rate"]:checked').value;
-
-  return `Avaliação: ${nota}`;
+  return `Avaliação: ${
+    document.querySelector('input[name="rate"]:checked').value
+  }`;
 }
 
 function pObs() {
-  const obs = document.getElementById('texarea').value;
-
-  return `Observações: ${obs}`;
+  return `Observações: ${document.getElementById('texarea').value}`;
 }
 
-function enviar() {
-  const registro = [pNomeComp(), pEmail(), pCasa(), pFamilia(), pMaterias(), pNota(), pObs()];
-  formulario.innerHTML = '';
-  const item = formulario.firstChild;
-  for (let i = 0; i < registro.length; i += 1) {
-    const linha = document.createElement('div');
-    linha.innerText = registro[i];
-    item.appendChild(linha);
-  }
-}
+function enviar(event) {
+const construcao = [
+  pNome(),
+  pEmail(),
+  pCasa(),
+  pFamilia(),
+  pMaterias(),
+  pNota(),
+  pObs(),
+];}
+//   formulario.innerHTML = '';
+// }
 
 botao.addEventListener('click', enviar);
