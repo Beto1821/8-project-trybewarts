@@ -39,7 +39,7 @@ const pSobreN = document.querySelector('#input-lastname');
 const pEmail = document.getElementById('input-email');
 const pCasa = document.getElementById('house');
 // https://pt.stackoverflow.com/questions/83463/pegar-valores-checkbox-com-javascript
-function pMaterias() {
+const pMaterias = () => {
   let lMaterias = [];
   const materias = document.getElementsByName('materia');
   for (let i = 0; i < materias.length; i += 1) {
@@ -49,7 +49,8 @@ function pMaterias() {
   }
   lMaterias = lMaterias.join(', ');
   return lMaterias;
-}
+};
+
 botao.addEventListener('click', (e) => {
   const pObs = document.getElementById('textarea');
   const pNota = document.querySelector('input[name="rate"]:checked');

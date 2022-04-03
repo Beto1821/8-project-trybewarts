@@ -99,7 +99,6 @@ main {
 #textarea {
   display: flex;
   align-items: stretch;
-  position: relative;
 }
 
 .textarea-counter {
